@@ -529,6 +529,67 @@ footer p{
  }
 }
 
+.container-fluid-5{
+	padding-top: 60px;
+	background-color: blanchedalmond;
+	height: 650px;
+	color: rgb(49, 24, 6);
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.container-fluid-5-content{
+	color: black;
+	letter-spacing: normal;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+
+.cards-wrapper {
+	display: flex;
+}
+
+.card {
+	margin: 50px;
+	width: calc(100%/2);
+	box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+
+.image-wrapper {
+	height: 22vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-wrapper img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.carousel {
+	position: relative;
+ }           
+
+ .carousel-control-prev , .carousel-control-next {
+	position: absolute;
+	top: 100%;
+	transform: TranslateY(-50%);
+ }
+
+ .carousel-control-prev {
+	right: auto;
+	left: 475px;
+ }
+ .carousel-control-next {
+	left: auto;
+	right: 475px;
+ }
+
+
 
 
 
