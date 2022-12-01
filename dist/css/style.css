@@ -98,6 +98,8 @@ header .hero h1{
 
 .about .box-about .box:nth-child(1) {
   padding-right: 40px;
+  float:left;
+  margin-left: 50px;
 }
 
 .about .box-about .box:nth-child(1) h1{
@@ -112,6 +114,8 @@ header .hero h1{
 .about .box-about .box:nth-child(2) img {
   border-radius: 20px;
   width: 500px;
+  float: right;
+  margin-right: 50px;
 }
 
 /* Destination Style */
