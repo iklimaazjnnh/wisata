@@ -5,7 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <!--gatau CDN apaan, biar slidenya jalan njir-->
+    <!--CDN agar slidenya berjalan-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>    
 
@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/csh3?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/remixiconh3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
 </head>
 <body id="home"> 
@@ -24,41 +25,31 @@
    <!-- navigation -->
    <section class="navigation">
     <div class="container">
-        <div class="box-navigation">
+        <div class="box-navigation animate__animated animate__fadeInDown">
             <div class="box">
                 <h1>YOGYAKARTA CITY DESTINATION</h1>
             </div>
             <div class="box menu-navigation">
               <ul>
                 <li>
-                  <i class="ri-home-3-line"></i>
                   <a href="#home">Home</a>
                 </li>
                 <li>
-                  <i class="ri-information-line"></i>
                   <a href="#about">About</a>
                 </li>
                 <li>
-                  <i class="ri-dashboard-line"></i>
-                  <a href="#destination">Destination</a>
+                  <a href="#destinasi">Destination</a>
                 </li>
                 <li>
-                  <i class="ri-image-line"></i>
                   <a href="#gallery">Gallery</a>
                 </li>
                 <li>
-                  <i class="ri-phone-line"></i>
                   <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <i class="ri-group-line"></i>
                   <a href="#team">Our Team</a>
                 </li>
               </ul>  
-            </div>
-            <div class="box menu-bar">
-              <i class="ri-menu-3-fill" style="color: white;"></i>
-            </div>
         </div>
     </div>
    </section>
@@ -66,7 +57,7 @@
 
   <!--hero-->
   <section class="hero">
-    <h1>Welcome To Yogyakarta City</h1>
+    <h1 class="animate__animated animate__heartBeat">Welcome To Yogyakarta City</h1>
   </section>
   <!--hero-->
  </header>
@@ -75,11 +66,11 @@
  <section class="about" id="about">
   <div class="container">
     <div class="box-about">
-      <div class="box">
+      <div class="box" data-aos="fade-right" data-aos-duration="1000">
         <h1>YOGYAKARTA</h1>
             <p>Daerah Istimewa Yogyakarta terletak di bagian selatan pulau Jawa, berbatasan dengan provinsi Jawa Tengah. Awalnya, Yogyakarta ialah kerajaan yang meliputi wilayah Kasultanan Ngayogyakarta hadiningrat dan Kadipaten Pakualaman, ditambah bekas wilayah Kasunan Surakarta Hadiningrat dan Praja Mangkunagaran. Nama Daerah Istimewa Yogyakarta mulai digunakan dalam urusan pemerintahan pada 18 Mei 1946, tercantum pada Maklumat Yogyakarta No 18 tahun 1946. Landmark kota ini ialah Tugu Yogyakarta atau yang juga dikenal sebagai Monumen Yogyakarta.</p>
       </div>
-      <div class="box">
+      <div class="box" data-aos="zoom-in" data-aos-duration="1000">
         <img src="./image/tugujogja.jpg" alt="">
       </div>
     </div>
@@ -88,32 +79,9 @@
 
  
 <!--destination-->
- <!-- <section class="destination" id="destination">
-  <div class="container">
-    <div class="box-destination">
-      <div class="box">
-        <img src="./image/keraton-yogyakarta.jpeg" alt="">
-        <h1>Keraton Yogyakarta</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis aut delectus omnis. Aliquam, voluptatem.</p>
-      </div>
-      <div class="box">
-        <img src="./image/borobudurtample.png" alt="">
-        <h1>Candi Borobudur</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis aut delectus omnis. Aliquam, voluptatem.</p>
-      </div>
-      <div class="box">
-        <img src="./image/Goa-Pindul-Yogyakarta.webp" alt="">
-        <h1>Goa Pindul</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis aut delectus omnis. Aliquam, voluptatem.</p>
-      </div>
-    </div>
-  </div>
- </section> -->
- <!--destination-->
-
-<div class="container-fluid-5">
+<div class="destinasi" id="destinasi">
   <h1><b>DESTINASI WISATA</b></h1>
-  <div class="container-fluid-5-content">
+  <div class="destinasi-content">
 
       <!--membuat carousel (1)-->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -128,34 +96,36 @@
                       <!--card 1-slide 1-->
                       <div class="card">
                           <div class="image-wrapper">
-                              <img src="./image/keraton-yogyakarta.jpeg" alt="batavia">
+                              <img src="./image/keraton-yogyakarta.jpeg" alt="keraton">
                           </div>
                           <div class="card-body">
-                              <h5 class="card-title"><b>Batavia Tempo Dulu</b></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Selengkapnya..</a>
+                              <h5 class="card-title"><b>Keraton Yogyakarta</b></h5>
+                              <p class="card-text">Keraton Yogyakarta termasuk salah satu wisata edukasi dan budaya populer...</p>
+                              <a href="destinasi1.html" class="btn btn-primary">Selengkapnya..</a>
                           </div>
                       </div>
                   
                       <!--cardh3-slide 1-->
                       <div class="card">
                           <div class="image-wrapper">
-                              <img src="./image/borobudurtample.png" alt="batavia">
+                              <img src="./image/borobudurtample.png" alt="borobudur">
                           </div>
                           <div class="card-body">
-                              <h5 class="card-title"><b>Batavia Tempo Dulu</b></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title"><b>Candi Borobudur</b></h5>
+                              <p class="card-text">Candi Borobudur merupakan salah satu candi budha terbesar di dunia...</p>
+                              <a href="destinasi2.html" class="btn btn-primary">Selengkapnya..</a>
                           </div>
                       </div>
 
                       <!--card 3-slide 1-->
                       <div class="card">
                           <div class="image-wrapper">
-                              <img src="./image/Goa-Pindul-Yogyakarta.webp" alt="batavia">
+                              <img src="./image/Goa-Pindul-Yogyakarta.webp" alt="pindul">
                           </div>
                           <div class="card-body">
-                              <h5 class="card-title"><b>Batavia Tempo Dulu</b></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title"><b>Goa Pindul</b></h5>
+                              <p class="card-text">Goa Pindul adalah gua yang eksotik dengan aliran sungai bawah tanah di Gunungkidul...</p>
+                              <a href="destinasi3.html" class="btn btn-primary">Selengkapnya..</a>
                           </div>
                       </div>
                   </div>
@@ -170,33 +140,36 @@
                       <!--card 1-slideh3-->
                       <div class="card">
                           <div class="image-wrapper">
-                              <img src="./image/keraton-yogyakarta.jpeg" alt="batavia">
+                              <img src="./image/prambanan.jpg" alt="prambanan">
                           </div>
                           <div class="card-body">
-                              <h5 class="card-title"><b>Batavia Tempo Dulu</b></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title"><b>Candi Prambanan</b></h5>
+                              <p class="card-text">Candi Prambanan merupakan candi Hindu yang terbesar di Indonesia...</p>
+                              <a href="destinasi4.html" class="btn btn-primary">Selengkapnya..</a>
                           </div>
                       </div>
                   
                       <!--cardh3-slide 2-->
                       <div class="card">
                           <div class="image-wrapper">
-                              <img src="./image/borobudurtample.png" alt="batavia">
+                              <img src="./image/bunker-kaliadem.png" alt="kaliadem">
                           </div>
                           <div class="card-body">
-                              <h5 class="card-title"><b>Batavia Tempo Dulu</b></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title"><b>Bunker Kaliadem</b></h5>
+                              <p class="card-text">Bunker Kaliadem daalah salah satu destinasi wisata di Yogyakarta yang unik dan sarat akan kisah...</p>
+                              <a href="destinasi5.html" class="btn btn-primary">Selengkapnya..</a>
                           </div>
                       </div>
 
                       <!--card 3-slideh3-->
                       <div class="card">
                           <div class="image-wrapper">
-                              <img src="./image/Goa-Pindul-Yogyakarta.webp" alt="batavia">
+                              <img src="./image/taman_pintar.png" alt="taman">
                           </div>
                           <div class="card-body">
-                              <h5 class="card-title"><b>Batavia Tempo Dulu</b></h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title"><b>Taman Pintar</b></h5>
+                              <p class="card-text"> Taman Pintar yogyakarta adalah wahana wisata yang terdapat di pusat Kota Yogyakarta...</p>
+                              <a href="destinasi6.html" class="btn btn-primary">Selengkapnya..</a>
                           </div>
                       </div>
                   </div>
@@ -217,17 +190,19 @@
     </div>
   </div>
 </div>
+<!--destination-->
 
 <!-- Gallery -->
 <section class="gallery" id="gallery">
+  <h1  data-aos="zoom-in-right" data-aos-duration="1000"><b>GALLERY WISATA</b></h1>
   <div class="container">
     <div class="box-gallery">
-      <img src="./image/alun-alun-kidul-jogja.jpg" alt="">
-      <img src="./image/kaliurang.jpg" alt="">
-      <img src="./image/malioboro.jpg" alt="">
-      <img src="./image/parangtritis.jpg" alt="">
-      <img src="./image/tlogo_putri_kaliurang.jpg" alt="">
-      <img src="./image/prambanan.jpg" alt="">
+      <img src="./image/alun-alun-kidul-jogja.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" />
+      <img src="./image/kaliurang.jpg" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" />
+      <img src="./image/malioboro.jpg" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" />
+      <img src="./image/parangtritis.jpg" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" />
+      <img src="./image/tlogo_putri_kaliurang.jpg" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900" />
+      <img src="./image/prambanan.jpg" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" />
     </div>
   </div>
  </section>
@@ -237,8 +212,8 @@
  <section class="contact" id="contact">
   <div class="container">
     <div class="box-contact">
-      <h1>Contact</h1>
-      <form action="">
+      <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Contact Us</h1>
+      <form action="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
         <table>
           <tr>
             <td><label for="nama">Nama</label></td>
@@ -264,33 +239,33 @@
 
  <!--Team-->
  <section class="team" id="team">
-  <h1><b>OUR TEAM</b></h1>
+  <h1  data-aos="zoom-in-down" data-aos-duration="1000"><b>OUR TEAM</b></h1>
   <div class="container">
-    <div class="box-team">
+    <div class="box-team" data-aos="zoom-in-up" data-aos-duration="1000">
       <div class="box">
-        <img src="./image/iklima.png" alt="">
+        <img src="./image/iklima.jpeg" alt=""> 
         <h1>Iklima Azizah Jannah</h1>
-        <p>@iklimaazizahjannah@gmail.com</p>
+        <p>202043501116</p>
       </div>
       <div class="box">
-        <img src="./image/iklima.png" alt="">
-        <h1>Iklima Azizah Jannah</h1>
-        <p>@iklimaazizahjannah@gmail.com</p>
+        <img src="./image/desti.jpeg" alt="">
+        <h1>Desti Oktavia Ananda</h1>
+        <p>202043501092</p>
       </div>
       <div class="box">
-        <img src="./image/iklima.png" alt="">
-        <h1>Iklima Azizah Jannah</h1>
-        <p>@iklimaazizahjannah@gmail.com</p>
+        <img src="./image/alif.jpeg" alt="">
+        <h1>Alif Firdaus</h1>
+        <p>202043502436</p>
       </div>
       <div class="box">
-        <img src="./image/iklima.png" alt="">
-        <h1>Iklima Azizah Jannah</h1>
-        <p>@iklimaazizahjannah@gmail.com</p>
+        <img src="./image/abram.jpeg" alt="">
+        <h1>Syaloom Abraham M</h1>
+        <p>202043502438</p>
       </div>
       <div class="box">
-        <img src="./image/iklima.png" alt="">
-        <h1>Iklima Azizah Jannah</h1>
-        <p>@iklimaazizahjannah@gmail.com</p>
+        <img src="./image/dodi.jpeg" alt="">
+        <h1>Dodi Oktario Fadhillah</h1>
+        <p>202043502437</p>
       </div>
     </div>
   </div>
@@ -299,10 +274,14 @@
 
  <!-- Footer -->
  <footer>
-  <p>&copy by Kelompok 4 Web Dasar </p>
+  <p>&copy 2022 by Kelompok 4 Web Dasar </p>
  </footer>
  <!-- Footer -->
   
   <script src="./dist/js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
