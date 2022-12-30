@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+    font-family: "poppins", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  .navigation {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    background-color: #003049;
+  }
+  
+  .navigation .box-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation .box-navigation .box:nth-child(1) h1 {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .navigation .box-navigation .box:nth-child(2) ul {
+    display: flex;
+  }
+  
+  .navigation .box-navigation .box:nth-child(2) ul li {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  
+  .navigation .box-navigation .box:nth-child(2) ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navigation .box-navigation .box:nth-child(2) ul li a:hover {
+    color: #003049;
+  }
+  
+  .navigation .box-navigation .box:nth-child(3) {
+    display: none;
+  }
+  
+  .navigation .box-navigation .box:nth-child(2) ul li i{
+    display: none;
+  }
+
+.navbar-brand{
+    font-size: 25px !important;
+}
+.nav-item a{
+    margin-right: 30px;
+    font-size: 20px;
+    color: black;
+}
+.nav-item a:hover{
+    transform: scale(1.1)
+}
+.btn-pesan{
+    font-size: 20px !important;
+    padding:5px 20px !important;
+}
+
+.table-harga{
+    font-size: 20px !important;
+}
+.btn-top{
+    margin-left: 94%;
+    margin-bottom: 10px;
+}
+
+.btn-total{
+    padding:8px 30px !important;
+}
+.btn-pesantiket{
+    padding:8px 55px !important;
+}
+.btn-cancel{
+    padding:8px 75px !important;
+}
+#labelAnak{
+    font-size: 12px;
+}
+
+/* Footer */
+footer p{
+  text-align: center;
+  padding: 20px 0 20px 0;
+  background-color: #003049;
+  color: white;
+}
